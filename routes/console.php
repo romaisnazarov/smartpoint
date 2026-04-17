@@ -5,6 +5,6 @@ use Illuminate\Support\Facades\Artisan;
 
 Schedule::call(function () {
     Artisan::call('blog:monitor', [
-        '--scheduler' => true,
+        'scheduler' => 'true',
     ]);
-})->everyTwoHours();
+});
